@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nila Prasad's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .profile-img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            padding: 40px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skills-list li {
+            list-style: none;
+            background-color: #f9f9f9;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .skills-list i {
+            margin-right: 10px;
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            .skills-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="image.png" alt="Nila Prasad" class="profile-img">
+            <h1>Nila Prasad</h1>
+            <p>UG Student | Christ (Deemed To Be University) Yeshwantpur Campus</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Motivated and enthusiastic 1st-year undergraduate student pursuing a degree in Computer Science, eager to gain practical experience through an internship position in a dynamic and innovative environment. Basic foundation in programming languages and a passion for solving problems in the field of technology and seeking actively for opportunities.</p>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <h3>Christ (Deemed to be University) Yeshwantpur campus</h3>
+                    <p>Bachelor of Computer Applications and Honours <br> Expected graduation: June 2027</p>
+                </li>
+                <li>
+                    <h3>Jindal PU College</h3>
+                    <p>PC/Computer Science, Economics, Business Studies, Accountancy <br> Completed in 2023 with 89.50%</p>
+                </li>
+                <li>
+                    <h3>Soundarya School</h3>
+                    <p>SSLC (10th) <br> Completed in 2021 with 93.92%</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li><i class="fas fa-code"></i> C/C++ (Basics)</li>
+                <li><i class="fas fa-code"></i> Java (Basics)</li>
+                <li><i class="fas fa-laptop-code"></i> Frontend: HTML, CSS (Basics), JavaScript (Basics)</li>
+                <li><i class="fas fa-database"></i> MySQL (Basics)</li>
+                <li><i class="fas fa-users"></i> Teamwork</li>
+                <li><i class="fas fa-comments"></i> Effective Communication</li>
+                <li><i class="fas fa-lightbulb"></i> Observation and Decision Making</li>
+                <li><i class="fas fa-brain"></i> Quick Adaptability and Creativity</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="certificates" class="section">
+        <div class="container">
+            <h2>Certificates</h2>
+            <ul>
+                <li>Microsoft Code Without Barrier PL-900: Microsoft Power Platform Fundamentals</li>
+                <li>Microsoft Code Without Barrier PL-300: Microsoft Power BI Data Analyst</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="interests" class="section">
+        <div class="container">
+            <h2>Interests</h2>
+            <ul>
+                <li>Exploring new web development frameworks and technologies to stay updated with industry trends and enhance skills.</li>
+                <li>Building personal websites and web applications to apply and expand knowledge in HTML, CSS, and JavaScript.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="languages" class="section">
+        <div class="container">
+            <h2>Languages</h2>
+            <ul>
+                <li>English (Fluent)</li>
+                <li>Kannada (Fluent)</li>
+                <li>Hindi (Fluent)</li>
+                <li>Malayalam (Fluent)</li>
+                <li>Tamil (Basics)</li>
+                <li>French (Beginner)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:nilapv95@gmail.com">nilapv95@gmail.com</a></p>
+            <p>Phone: 9119319800</p>
+            <p>Address: #22028, Prestige Jindal City, Bangalore-73</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nila Prasad. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
