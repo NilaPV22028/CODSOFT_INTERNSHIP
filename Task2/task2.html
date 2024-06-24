@@ -11,76 +11,122 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-color: #63b2d4; /* Light gray background color */
+            color: #333; /* Main text color */
         }
 
         .container {
             width: 80%;
             margin: 0 auto;
             padding: 20px;
+            background-color: #42bddfcf; /* White background for content */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for container */
+            border-radius: 8px; /* Rounded corners */
         }
 
         header {
             background-color: #333;
             color: #fff;
-            padding: 20px 0;
             text-align: center;
+            padding: 20px 0;
+            border-radius: 8px; /* Rounded corners */
+            margin-bottom: 20px; /* Space below header */
         }
 
         header .profile-img {
             width: 150px;
+            height: 150px;
             border-radius: 50%;
             margin-bottom: 10px;
         }
 
-        header nav ul {
-            list-style: none;
-            padding: 0;
+        header h1 {
+            margin-bottom: 5px;
+            font-size: 2.5rem;
         }
 
-        header nav ul li {
-            display: inline;
-            margin: 0 10px;
+        header p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
         }
 
-        header nav ul li a {
+        header .resume-link {
+            display: inline-block;
+            background-color: #4CAF50;
             color: #fff;
             text-decoration: none;
-            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
         }
 
-        header nav ul li a:hover {
-            text-decoration: underline;
+        header .resume-link:hover {
+            background-color: #45a049;
         }
 
         .section {
-            padding: 40px 0;
-            border-bottom: 1px solid #ddd;
+            padding: 20px;
+            background-color: #fff; /* White background for sections */
+            margin-bottom: 20px; /* Space between sections */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for sections */
+            border-radius: 8px; /* Rounded corners */
         }
 
-        h2 {
+        .section h2 {
             text-align: center;
             margin-bottom: 20px;
+            color: #333; /* Dark text color for headings */
+        }
+
+        .subsection {
+            background-color: #f9f9f9; /* Light gray background for subsections */
+            padding: 15px;
+            margin-top: 10px; /* Space above each subsection */
+            border-radius: 5px; /* Rounded corners for subsections */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow for subsections */
+        }
+
+        .subsection img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
         }
 
         .skills-list {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
+            gap: 10px;
+            padding-left: 0;
+            list-style-type: none;
         }
 
         .skills-list li {
-            list-style: none;
-            background-color: #f9f9f9;
-            padding: 10px 20px;
+            background-color: #f0f0f0; /* Lighter gray for skills */
+            padding: 8px 15px;
             border-radius: 5px;
-            display: flex;
-            align-items: center;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
         }
 
-        .skills-list i {
-            margin-right: 10px;
-            color: #333;
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            flex: 1 0 300px; /* Responsive project card */
+        }
+
+        .project img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
         }
 
         footer {
@@ -88,16 +134,27 @@
             color: #fff;
             text-align: center;
             padding: 20px 0;
+            border-radius: 8px; /* Rounded corners */
+            margin-top: 20px; /* Space above footer */
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #98fff6; /* Light blue links */
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
 
         @media (max-width: 768px) {
             .container {
                 width: 90%;
-            }
-
-            .skills-list {
-                flex-direction: column;
-                align-items: center;
             }
         }
     </style>
@@ -105,47 +162,20 @@
 <body>
     <header>
         <div class="container">
-            <img src="image.png" alt="Nila Prasad" class="profile-img">
+            <img src="pic.png" alt="Nila Prasad" class="profile-img">
             <h1>Nila Prasad</h1>
             <p>UG Student | Christ (Deemed To Be University) Yeshwantpur Campus</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#certificates">Certificates</a></li>
-                    <li><a href="#interests">Interests</a></li>
-                    <li><a href="#languages">Languages</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <a href="nila- resume 2024.pdf" class="resume-link" download><i class="fas fa-download"></i> Download Resume</a>
         </div>
     </header>
 
     <section id="about" class="section">
         <div class="container">
             <h2>About Me</h2>
-            <p>Motivated and enthusiastic 1st-year undergraduate student pursuing a degree in Computer Science, eager to gain practical experience through an internship position in a dynamic and innovative environment. Basic foundation in programming languages and a passion for solving problems in the field of technology and seeking actively for opportunities.</p>
-        </div>
-    </section>
-
-    <section id="education" class="section">
-        <div class="container">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <h3>Christ (Deemed to be University) Yeshwantpur campus</h3>
-                    <p>Bachelor of Computer Applications and Honours <br> Expected graduation: June 2027</p>
-                </li>
-                <li>
-                    <h3>Jindal PU College</h3>
-                    <p>PC/Computer Science, Economics, Business Studies, Accountancy <br> Completed in 2023 with 89.50%</p>
-                </li>
-                <li>
-                    <h3>Soundarya School</h3>
-                    <p>SSLC (10th) <br> Completed in 2021 with 93.92%</p>
-                </li>
-            </ul>
+            <div class="subsection">
+                <img src="pic.png" alt="Your Name" style="width: 100%; max-width: 300px; border-radius: 8px;">
+                <p>Motivated and enthusiastic 1st-year undergraduate student pursuing a degree in Computer Science, eager to gain practical experience through an internship position in a dynamic and innovative environment. Basic foundation in programming languages and a passion for solving problems in the field of technology and seeking actively for opportunities.</p>
+            </div>
         </div>
     </section>
 
@@ -153,77 +183,61 @@
         <div class="container">
             <h2>Skills</h2>
             <ul class="skills-list">
-                <li><i class="fas fa-code"></i> C/C++ (Basics)</li>
-                <li><i class="fas fa-code"></i> Java (Basics)</li>
-                <li><i class="fas fa-laptop-code"></i> Frontend: HTML, CSS (Basics), JavaScript (Basics)</li>
-                <li><i class="fas fa-database"></i> MySQL (Basics)</li>
-                <li><i class="fas fa-users"></i> Teamwork</li>
-                <li><i class="fas fa-comments"></i> Effective Communication</li>
-                <li><i class="fas fa-lightbulb"></i> Observation and Decision Making</li>
-                <li><i class="fas fa-brain"></i> Quick Adaptability and Creativity</li>
+                <li>C/C++ (Basics)</li>
+                <li>Java (Basics)</li>
+                <li>HTML, CSS (Basics), JavaScript (Basics)</li>
+                <li>MySQL (Basics)</li>
+                <li>Teamwork</li>
+                <li>Effective Communication</li>
+                <li>Observation and Decision Making</li>
+                <li>Quick Adaptability and Creativity</li>
             </ul>
         </div>
     </section>
 
-    <section id="certificates" class="section">
+    <section id="projects" class="section">
         <div class="container">
-            <h2>Certificates</h2>
-            <ul>
-                <li>Microsoft Code Without Barrier PL-900: Microsoft Power Platform Fundamentals</li>
-                <li>Microsoft Code Without Barrier PL-300: Microsoft Power BI Data Analyst</li>
-            </ul>
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="calci.png" alt="Project 1">
+                    <h3>Project1-> Calculator</h3>
+                    <p>a basic calculator using CSS, HTML, and JavaScript,.</p>
+                </div>
+                <div class="project">
+                    <img src="landingpage.png" alt="Project 2">
+                    <h3>Project2->Landing Page</h3>
+                    <p>Creating a personal portfolio using CSS and HTML  web development project.</p>
+                </div>
+             
+            </div>
         </div>
     </section>
 
-    <section id="interests" class="section">
+    <section id="resume" class="section">
         <div class="container">
-            <h2>Interests</h2>
-            <ul>
-                <li>Exploring new web development frameworks and technologies to stay updated with industry trends and enhance skills.</li>
-                <li>Building personal websites and web applications to apply and expand knowledge in HTML, CSS, and JavaScript.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="languages" class="section">
-        <div class="container">
-            <h2>Languages</h2>
-            <ul>
-                <li>English (Fluent)</li>
-                <li>Kannada (Fluent)</li>
-                <li>Hindi (Fluent)</li>
-                <li>Malayalam (Fluent)</li>
-                <li>Tamil (Basics)</li>
-                <li>French (Beginner)</li>
-            </ul>
+            <h2>Resume</h2>
+            <div class="subsection">
+                <p>Download my resume <a href="nila- resume 2024.pdf" download><i class="fas fa-file-pdf"></i> here</a>.</p>
+            </div>
         </div>
     </section>
 
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:nilapv95@gmail.com">nilapv95@gmail.com</a></p>
-            <p>Phone: 9119319800</p>
-            <p>Address: #22028, Prestige Jindal City, Bangalore-73</p>
+            <div class="subsection">
+                <p>Email: <a href="mailto:nilapv95@gmail.com">nilapv95@gmail.com</a></p>
+                <p>Phone: 9119319800</p>
+                <p>Address: #22028, Prestige Jindal City, Bangalore-73</p>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Nila Prasad. All rights reserved.</p>
+            <p>&copy; 2024 Nila Prasad. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
         </div>
     </footer>
-
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
